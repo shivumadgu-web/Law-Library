@@ -3,41 +3,68 @@ body {
     padding: 0;
     background: #f5f5f5;
     font-family: Arial, sans-serif;
-}
-
-h1 {
     text-align: center;
-    color: darkblue;
-    padding: 20px;
 }
 
-.slider {
-    width: 1000px;
-    height: 400px;
-    margin: auto;
-    overflow: hidden;
-    border: 2px solid #ccc;
+/* Header */
+.header {
     background: white;
+    padding: 5px;
+}
+
+.logo {
+    width: 320px;
+    height: auto;
+    display: block;
+    margin: 0 auto -15px auto;
+}
+
+.header h2 {
+    margin: 0;
+    color: #003366;
+    font-size: 28px;
+}
+
+.header h3 {
+    margin: 0;
+    color: #444;
+    font-size: 22px;
+}
+
+.new-arrivals {
+    margin-top: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #006400;
+}
+
+/* Slider */
+.slider {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 30px;
 }
 
 .slide-track {
     display: flex;
     width: max-content;
-    animation: scroll 30s linear infinite;
+    gap: 20px;
+    animation: scroll 25s linear infinite;
 }
 
 .slide-track img {
     width: 250px;
     height: 350px;
-    margin: 25px 10px;
     object-fit: cover;
-    flex-shrink: 0;
+    border-radius: 10px;
 }
 
+/* Continuous round scrolling */
 @keyframes scroll {
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(-50%);
     }
