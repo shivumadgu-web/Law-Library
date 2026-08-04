@@ -22,13 +22,14 @@ body {
 .header h2 {
     margin: 0;
     color: #003366;
-    font-size: 28px;
+    font-size: 22px;
 }
 
 .header h3 {
     margin: 0;
     color: #444;
-    font-size: 22px;
+    font-size: 38px;
+    font-weight: bold;
 }
 
 .new-arrivals {
