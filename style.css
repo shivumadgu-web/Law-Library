@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Header */
+.header {
+    background: white;
+    padding: 5px;
+}
+
+.logo {
+    width: 320px;
+    height: auto;
+    display: block;
+    margin: 0 auto -15px auto;
+}
+
+.header h2 {
+    margin: 0;
+    color: #003366;
+    font-size: 28px;
+}
+
+.header h3 {
+    margin: 0;
+    color: #444;
+    font-size: 22px;
+}
+
+.new-arrivals {
+    margin-top: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #006400;
+}
+
+/* KRC OPAC Carousel */
+
+.carousel-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.carousel {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    overflow: hidden;
+    background: #e6e6e6;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+}
+
+/* Book Images */
+
+.book {
+    width: 110px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 3px;
+    opacity: 0.8;
+    transform: scale(0.95);
+    transition: all 0.8s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.book.active {
+    width: 140px;
+    height: 210px;
+    opacity: 1;
+    transform: scale(1.1);
+    z-index: 5;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.book:not(.active) {
+    filter: brightness(90%);
+}
+
+/* Navigation Buttons */
+
+.nav {
+    background: #003366;
+    color: white;
+    border: none;
+    font-size: 28px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nav:hover {
+    background: #0066cc;
+}
+
+/* Book Information */
+
+.book-info {
+    margin: 20px auto;
+    padding: 15px;
+    width: 70%;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.book-info h2 {
+    margin: 0;
+    color: #003366;
+    font-size: 30px;
+}
+
+.book-info p {
+    margin-top: 8px;
+    color: #555;
+    font-size: 20px;
+}
+
+/* ===== KRC Position Classes ===== */
+
+.book.left2,
+.book.right2 {
+    transform: scale(0.85);
+    opacity: 0.6;
+}
+
+.book.left1,
+.book.right1 {
+    transform: scale(0.95);
+    opacity: 0.8;
+}
+
+.book.center {
+    transform: scale(1.15);
+    opacity: 1;
+    z-index: 10;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.30);
+}
+/* Shadow below books */
+
+.carousel::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    width: 600px;
+    height: 50px;
+    background: radial-gradient(
+        ellipse,
+        rgba(0,0,0,0.20),
+        transparent 70%
+    );
+    border-radius: 50%;
+    z-index: 0;
+}
