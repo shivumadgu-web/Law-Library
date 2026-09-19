@@ -59,14 +59,16 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: 3px;
-    gap: 10px;
+    justify-content: flex-start;
+margin-top: 3px;
+min-height: calc(100vh - 300px);
+    gap: 5px;
+    box-sizing: border-box;
 }
 
 .carousel {
-    width: 1200px;
-    height: 430px;
+ width: calc(100% - 20px);
+height: 430px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,7 +139,7 @@ body {
    ========================= */
 
 .book-info {
-    margin: 8px auto;
+margin: 0 auto;
     padding: 10px;
     width: 70%;
     background: white;
@@ -200,4 +202,36 @@ body {
     );
     border-radius: 50%;
     z-index: 0;
+}
+/* =========================
+   TITLE + IMPLEMENTED BY
+   ========================= */
+
+.info-row {
+    width: 100%;
+    margin: 8px auto 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.info-row .book-info {
+    width: 45%;
+    margin: 0 auto;
+}
+
+.implemented-by {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 15%;
+    white-space: nowrap;
+    padding: 8px 10px;
+    background: #ffd6e7;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.3;
 }
