@@ -61,14 +61,14 @@ body {
     align-items: center;
     justify-content: flex-start;
 margin-top: 3px;
-min-height: calc(100vh - 300px);
+min-height: auto;
     gap: 5px;
     box-sizing: border-box;
 }
 
 .carousel {
  width: calc(100% - 20px);
-height: 430px;
+height: 650px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,8 +86,8 @@ height: 430px;
    ========================= */
 
 .book {
-    width: 190px;
-    height: 280px;
+    width: 220px;
+    height: 330px;
     object-fit: contain;
     background: white;
     border-radius: 4px;
@@ -100,8 +100,8 @@ height: 430px;
 }
 
 .book.active {
-    width: 250px;
-    height: 360px;
+    width: 280px;
+    height: 410px;
     opacity: 1;
     transform: scale(1.05);
     z-index: 10;
