@@ -102,6 +102,7 @@ height: 480px;
 .book.active {
     width: 280px;
     height: 410px;
+    object-fit: cover;
     opacity: 1;
     transform: scale(1.05);
     z-index: 10;
