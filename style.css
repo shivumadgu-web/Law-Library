@@ -240,3 +240,65 @@ margin: 0 auto;
 }html, body {
     overflow-x: hidden;
 }
+/* =========================
+   FIT SLIDESHOW TO SCREEN
+   ========================= */
+
+@media (max-height: 800px) {
+
+    .logo {
+        width: 120px;
+    }
+
+    .header h2 {
+        font-size: 17px;
+        line-height: 19px;
+    }
+
+    .header h3 {
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+    .new-arrivals {
+        font-size: 23px;
+        line-height: 25px;
+    }
+
+    .carousel {
+        height: 400px;
+        padding: 10px;
+    }
+
+    .book {
+        width: 190px;
+        height: 285px;
+    }
+
+    .book.active {
+        width: 235px;
+        height: 350px;
+    }
+
+    .book.center {
+        transform: scale(1.05);
+    }
+
+    .book-info {
+        padding: 6px;
+    }
+
+    .book-info h2 {
+        font-size: 23px;
+    }
+
+    .book-info p {
+        font-size: 16px;
+        margin-top: 3px;
+    }
+
+    .implemented-by {
+        padding: 5px 8px;
+        font-size: 14px;
+    }
+}
